@@ -1256,6 +1256,7 @@ public class SmsMessage extends SmsMessageBase {
                     break;
 
                 case 1: // 8 bit data
+<<<<<<< HEAD
                     //Support decoding the user data payload as pack GSM 8-bit (a GSM alphabet string
                     //that's stored in 8-bit unpacked format) characters.
                     Resources r = Resources.getSystem();
@@ -1266,7 +1267,8 @@ public class SmsMessage extends SmsMessageBase {
                     }
 
                 case 3: // reserved
-
+=======
+>>>>>>> 5290f88... Korean Mms fix (1/2)
                     Rlog.w(LOG_TAG, "1 - Unsupported SMS data coding scheme "
                             + (mDataCodingScheme & 0xff));
                     encodingType = ENCODING_8BIT;
